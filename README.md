@@ -10,12 +10,12 @@ A linked list is  data structure consisting of a group of nodes which together r
 
 The principal benefit of a linked list over a conventional array is that the list elements can easily be inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk.
 
-On the other hand, simple linked lists by themselves do not allow random access to the data, or any form of efficient indexing. Thus, many basic operations — such as obtaining the last node of the list (assuming that the last node is not maintained as separate node reference in the list structure), or finding a node that contains a given datum, or locating the place where a new node should be inserted — may require scanning most or all of the list elements. - [Linked List on Wikipedia](http://en.wikipedia.org/wiki/Linked_list)
+On the other hand, simple linked lists by themselves do not allow random access to the data, or any form of efficient indexing. Thus, many basic operations–such as obtaining the last node of the list (assuming that the last node is not maintained as separate node reference in the list structure), or finding a node that contains a given datum, or locating the place where a new node should be inserted–may require scanning most or all of the list elements.
 
 ## Objectives
 
 ### Implement a Linked List with an Array
-Implement a Linked List class using an array. Write a script to test out your class, be sure you can add and remove items and determine if a list is empty.
+Implement a Linked List class using an Array. Write a script to test out your class, be sure you can add and remove items and determine if a list is empty.
 
 Upload your Linked List class and the script to your gist.
 
@@ -32,3 +32,4 @@ Upload your Queue with Linked List class and the script to your gist.
 ##Optimize Your Learning
 
 ##Resources
+- [Linked List on Wikipedia](http://en.wikipedia.org/wiki/Linked_list)
