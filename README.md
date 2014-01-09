@@ -23,7 +23,7 @@ Implement a Linked List class using an Array. Write a script to test out your cl
 
 Upload your Linked List class and the script to the file `linked_list_array.rb`.
 
-### Implement a Queue with a Linked List
+###Release 1 : Implement a Queue with a Linked List
 You're really moving now. One of the benefits of a linked list is it makes it easier to implement a stack or a queue because you don't have to restrict the size.
 
 Use your linked list class (instead of an array) to implement the queue class. Be sure you can push, pop and perform all the other operations that you could in your array based implementation. Use the same script you wrote to test the Queue with Array class from the previous challenge to test out this class.
