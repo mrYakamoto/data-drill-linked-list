@@ -9,7 +9,7 @@
 
 Now that you've spent some time learning about abstract data structures and implementing a stack and a queue, let's look at another useful data structure, the *linked list*.
 
-A linked list is  data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of a datum and a reference (in other words, a link) to the next node in the sequence; more complex variants add additional links. This structure allows for efficient insertion or removal of elements from any position in the sequence.
+A linked list is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of a datum and a reference (in other words, a link) to the next node in the sequence; more complex variants add additional links. This structure allows for efficient insertion or removal of elements from any position in the sequence.
 
 The principal benefit of a linked list over a conventional array is that the list elements can easily be inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk.
 
@@ -17,18 +17,19 @@ On the other hand, simple linked lists by themselves do not allow random access 
 
 ##Releases
 
-###Release 0 : Implement a Linked List with an Array
+###Release 0 : Implement a Linked List from an Array
 
-Implement a Linked List class using an Array. Write a script to test out your class, be sure you can add and remove items and determine if a list is empty.
+Implement a Linked List class that takes in an array on initialize. Don't forget to write tests in the spec file!
 
-Upload your Linked List class and the script to the file `linked_list_array.rb`.
+Hint: are there any other classes you need to create in order to implement your linked list?
 
 ###Release 1 : Implement a Queue with a Linked List
+
 You're really moving now. One of the benefits of a linked list is it makes it easier to implement a stack or a queue because you don't have to restrict the size.
 
-Use your linked list class (instead of an array) to implement the queue class. Be sure you can push, pop and perform all the other operations that you could in your array based implementation. Use the same script you wrote to test the Queue with Array class from the previous challenge to test out this class.
+Use your linked list class (instead of an array) to implement the queue class. Be sure you can push, pop and perform all the other operations that you could in your array based implementation.  If you haven't done the Stack and Queue challenge and are confused about this concept, [check it out](https://github.com/fireflies-2014/data-drill-stack-and-queue-challenge) for some help.
 
-Upload your Queue with Linked List class and the script to the file `linked_list_queue.rb`
+Again--write tests! Lots of tests!
 
 <!-- ##Optimize Your Learning -->
 
