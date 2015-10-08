@@ -1,4 +1,4 @@
-require_relative '../linked_list_array'
+require_relative '../linked_list'
 
 describe 'LinkedList' do 
 
