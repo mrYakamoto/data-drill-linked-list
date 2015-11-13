@@ -16,13 +16,20 @@ Why use a linked list over another list structure like an array?  The principal 
 On the other hand, linked lists do have some limitations.  Simple linked lists do not allow efficient indexing or random access to any item in the list.  Searching through the list to find a particular node is always done as a linear search, beginning with the head node and proceeding through the list.  Thus, basic operations could require scanning most or all of the list elements—for example, obtaining the last node of the list, finding a node with a given value, or locating the place where a new node should be inserted.
 
 
-##Releases
+## Releases
+### Release 0: Implement a Linked List
+We're going to build a linked list data structure.  As always, we need to write tests for our code.  Here's a run down of the functionality that our linked list will need.
 
-###Release 0 : Implement a Linked List from an Array
+- Push an item to the end of the list.
+- Pop an item from the end of the list.
+- Insert an item at the front of the list (i.e., make the new item the head).
+- Remove the head from the list, preserving the rest of the list.
+- Insert an item at a given index.
+- Remove an item at a given index.
+- Return an item from the list matching a given value.
 
-Implement a Linked List class that takes in an array on initialize. Don't forget to write tests in the spec file!
+*Hint:*  What classes do we need to build in order to implement a linked list?
 
-Hint: are there any other classes you need to create in order to implement your linked list?
 
 ###Release 1 : Implement a Queue with a Linked List
 
