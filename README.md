@@ -1,19 +1,20 @@
-# Data Drill Linked List
+# Data Drill: Linked List
 
-##Learning Competencies
-* Understand the types of data structures.
-* Implement the Linked List data structures in Ruby.
-* Determine when to use a particular data structure.
 
-##Summary
+## Summary
+![linked list image](readme-assets/linked_list.png)  
+*Figure 1*. Visual representation of a linked list.
 
-Now that you've spent some time learning about abstract data structures and implementing a stack and a queue, let's look at another useful data structure, the *linked list*.
+A [linked list][wikipedia linked list] is a data structure made from a sequence of nodes.  In a linked list, each node contains two pieces of data: (1) a value and (2) a reference to the next node in the sequence.  The list itself contains a reference to the first node, the head.  This is displayed visually in Figure 1.
 
-A linked list is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of a datum and a reference (in other words, a link) to the next node in the sequence; more complex variants add additional links. This structure allows for efficient insertion or removal of elements from any position in the sequence.
+We're going to build our own linked list data structure in Ruby.
 
-The principal benefit of a linked list over a conventional array is that the list elements can easily be inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk.
 
-On the other hand, simple linked lists by themselves do not allow random access to the data, or any form of efficient indexing. Thus, many basic operations–such as obtaining the last node of the list (assuming that the last node is not maintained as separate node reference in the list structure), or finding a node that contains a given datum, or locating the place where a new node should be inserted–may require scanning most or all of the list elements.
+### About Linked Lists
+Why use a linked list over another list structure like an array?  The principal benefit of a linked list over a conventional array is that list elements can inserted and removed without reallocating or reorganizing the entire structure because the list items do not need to be stored contiguously in memory or on disk.
+
+On the other hand, linked lists do have some limitations.  Simple linked lists do not allow efficient indexing or random access to any item in the list.  Searching through the list to find a particular node is always done as a linear search, beginning with the head node and proceeding through the list.  Thus, basic operations could require scanning most or all of the list elements—for example, obtaining the last node of the list, finding a node with a given value, or locating the place where a new node should be inserted.
+
 
 ##Releases
 
@@ -34,4 +35,6 @@ Again--write tests! Lots of tests!
 <!-- ##Optimize Your Learning -->
 
 ##Resources
-- [Linked List on Wikipedia](http://en.wikipedia.org/wiki/Linked_list)
+
+
+[wikipedia linked list]: http://en.wikipedia.org/wiki/Linked_list
