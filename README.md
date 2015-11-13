@@ -31,17 +31,12 @@ We're going to build a linked list data structure.  As always, we need to write 
 *Hint:*  What classes do we need to build in order to implement a linked list?
 
 
-###Release 1 : Implement a Queue with a Linked List
+### Release 1: Implement a Stack and Queue with a Linked List *(optional)*
+In [another challenge][stack and queue challenge], we are asked to build stack and queue data structures.  Each of these data structures was built on top of an array.  Let's update our stack and queue to use our new linked list instead of an array.  The behaviors of these classes should not change.  In other words, *how* the classes work will change, but *what* they do will remain the same.
 
-You're really moving now. One of the benefits of a linked list is it makes it easier to implement a stack or a queue because you don't have to restrict the size.
-
-Use your linked list class (instead of an array) to implement the queue class. Be sure you can push, pop and perform all the other operations that you could in your array based implementation.  If you haven't done the Stack and Queue challenge and are confused about this concept, [check it out](https://github.com/fireflies-2014/data-drill-stack-and-queue-challenge) for some help.
-
-Again--write tests! Lots of tests!
-
-<!-- ##Optimize Your Learning -->
 
 ##Resources
 
 
+[stack and queue challenge]: ../../../data-drill-stack-and-queue-challenge
 [wikipedia linked list]: http://en.wikipedia.org/wiki/Linked_list
