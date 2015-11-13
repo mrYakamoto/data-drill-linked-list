@@ -35,7 +35,8 @@ We're going to build a linked list data structure.  As always, we need to write 
 In [another challenge][stack and queue challenge], we are asked to build stack and queue data structures.  Each of these data structures was built on top of an array.  Let's update our stack and queue to use our new linked list instead of an array.  The behaviors of these classes should not change.  In other words, *how* the classes work will change, but *what* they do will remain the same.
 
 
-##Resources
+## Conclusion
+Do we understand what a linked list is? Could we explain it to someone with a non-technical background?  What are some real-world situations that could be modeled as a linked list?
 
 
 [stack and queue challenge]: ../../../data-drill-stack-and-queue-challenge
