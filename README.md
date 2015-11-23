@@ -1,37 +1,43 @@
-# Data Drill Linked List
+# Data Drill: Linked List
 
-##Learning Competencies
-* Understand the types of data structures.
-* Implement the Linked List data structures in Ruby.
-* Determine when to use a particular data structure.
 
-##Summary
+## Summary
+![linked list image](readme-assets/linked_list.png)  
+*Figure 1*. Visual representation of a linked list.
 
-Now that you've spent some time learning about abstract data structures and implementing a stack and a queue, let's look at another useful data structure, the *linked list*.
+A [linked list][wikipedia linked list] is a data structure made from a sequence of nodes.  In a linked list, each node contains two pieces of data: (1) a value and (2) a reference to the next node in the sequence.  The list itself contains a reference to the first node, the head.  This is displayed visually in Figure 1.
 
-A linked list is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of a datum and a reference (in other words, a link) to the next node in the sequence; more complex variants add additional links. This structure allows for efficient insertion or removal of elements from any position in the sequence.
+We're going to build our own linked list data structure in Ruby.
 
-The principal benefit of a linked list over a conventional array is that the list elements can easily be inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk.
 
-On the other hand, simple linked lists by themselves do not allow random access to the data, or any form of efficient indexing. Thus, many basic operations–such as obtaining the last node of the list (assuming that the last node is not maintained as separate node reference in the list structure), or finding a node that contains a given datum, or locating the place where a new node should be inserted–may require scanning most or all of the list elements.
+### About Linked Lists
+Why use a linked list over another list structure like an array?  The principal benefit of a linked list over a conventional array is that list elements can inserted and removed without reallocating or reorganizing the entire structure because the list items do not need to be stored contiguously in memory or on disk.
 
-##Releases
+On the other hand, linked lists do have some limitations.  Simple linked lists do not allow efficient indexing or random access to any item in the list.  Searching through the list to find a particular node is always done as a linear search, beginning with the head node and proceeding through the list.  Thus, basic operations could require scanning most or all of the list elements—for example, obtaining the last node of the list, finding a node with a given value, or locating the place where a new node should be inserted.
 
-###Release 0 : Implement a Linked List from an Array
 
-Implement a Linked List class that takes in an array on initialize. Don't forget to write tests in the spec file!
+## Releases
+### Release 0: Implement a Linked List
+We're going to build a linked list data structure.  As always, we need to write tests for our code.  Here's a run down of the functionality that our linked list will need.
 
-Hint: are there any other classes you need to create in order to implement your linked list?
+- Push an item to the end of the list.
+- Pop an item from the end of the list.
+- Insert an item at the front of the list (i.e., make the new item the head).
+- Remove the head from the list, preserving the rest of the list.
+- Insert an item at a given index.
+- Remove an item at a given index.
+- Return an item from the list matching a given value.
 
-###Release 1 : Implement a Queue with a Linked List
+*Hint:*  What classes do we need to build in order to implement a linked list?
 
-You're really moving now. One of the benefits of a linked list is it makes it easier to implement a stack or a queue because you don't have to restrict the size.
 
-Use your linked list class (instead of an array) to implement the queue class. Be sure you can push, pop and perform all the other operations that you could in your array based implementation.  If you haven't done the Stack and Queue challenge and are confused about this concept, [check it out](https://github.com/fireflies-2014/data-drill-stack-and-queue-challenge) for some help.
+### Release 1: Implement a Stack and Queue with a Linked List *(optional)*
+In [another challenge][stack and queue challenge], we are asked to build stack and queue data structures.  Each of these data structures was built on top of an array.  Let's update our stack and queue to use our new linked list instead of an array.  The behaviors of these classes should not change.  In other words, *how* the classes work will change, but *what* they do will remain the same.
 
-Again--write tests! Lots of tests!
 
-<!-- ##Optimize Your Learning -->
+## Conclusion
+Do we understand what a linked list is? Could we explain it to someone with a non-technical background?  What are some real-world situations that could be modeled as a linked list?
 
-##Resources
-- [Linked List on Wikipedia](http://en.wikipedia.org/wiki/Linked_list)
+
+[stack and queue challenge]: ../../../data-drill-stack-and-queue-challenge
+[wikipedia linked list]: http://en.wikipedia.org/wiki/Linked_list
